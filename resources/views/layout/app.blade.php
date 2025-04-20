@@ -37,7 +37,11 @@
                         <a class="nav-link" href="{{ route('about') }}">A propos</a>
                     </li>
                 </ul>
+
             </div>
+            <span class="navbar-text">
+                <a href="{{ route('dashboard') }}?admin=1" class="text-decoration-none">Espace Admin</a>
+            </span>
         </div>
     </nav>
 
