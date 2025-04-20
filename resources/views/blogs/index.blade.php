@@ -39,8 +39,7 @@
         <div class="col-md-4 mb-3">
             <div class="card h-100">
                 <div class="card-body">
-                    <b class="bg-danger text-white py-1 px-2 rounded">{{ $blog['category'] }}</b>
-                    <h4 class="card-title mt-2">{{ $blog['title'] }}</h3>
+                    <h4 class="card-title">{{ $blog['title'] }}</h3>
                         <h6 class="text-secondary">
                             <b>{{ $blog['author'] }}</b> - <b>{{ $blog['published_at'] }}</b>
                         </h6>

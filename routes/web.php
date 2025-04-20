@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 $blogs = ArticlesData::getArticles();
 $categories = ArticlesData::getCategories();
+$tags = ArticlesData::getTags();
 
 Route::get('/', function (Request $request) use ($blogs, $categories) {
     return view('blogs.index', [
@@ -34,7 +35,7 @@ Route::get("/a-propos", function () use ($categories) {
 })->name("about");
 
 // Register Admin Routes
-Route::prefix('admin')->middleware('admin')->group(function () use ($blogs) {
+Route::prefix('admin')->middleware('admin')->group(function () use ($blogs, $categories, $tags) {
     Route::get('/dashboard', function () use ($blogs) {
         return view("admin.dashboard", [
             'blogs' => $blogs
@@ -51,6 +52,17 @@ Route::prefix('admin')->middleware('admin')->group(function () use ($blogs) {
 
         return view("admin.show", [
             'blog' => $blog
+        ]);
+    });
+
+    Route::get('/articles/edit/{slug}', function (Request $request) use ($categories, $tags) {
+        $articleSlug = $request->slug;
+        $blog = ArticlesData::getArticleBySlug($articleSlug);
+
+        return view("admin.edit", [
+            'blog' => $blog,
+            'categories' => $categories,
+            'tags' => $tags
         ]);
     });
 });

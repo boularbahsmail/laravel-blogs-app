@@ -31,11 +31,6 @@
                             @foreach($categories as $category)
                             <li><a class="dropdown-item" href="/?category={{ $category }}">{{ $category }}</a></li>
                             @endforeach
-                            <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                         </ul>
                     </li>
                     <li class="nav-item">

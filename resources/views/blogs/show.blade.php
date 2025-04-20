@@ -11,27 +11,28 @@
             </ol>
         </nav>
 
-        <h1>{{ $blog['title'] }}</h1>
-        <h6 class="text-secondary">
-            <b>{{ $blog['author'] }}</b> - <b>{{ $blog['published_at'] }}</b>
-        </h6>
-        <div class="mt-2">
-            @foreach($blog['tags'] as $tag)
-            <span class="badge {{ $loop->first ? 'bg-primary text-decoration-underline' : 'bg-secondary' }}">{{ $tag }}</span>
-            @endforeach
+        <div class="card p-3">
+            <h1>{{ $blog['title'] }}</h1>
+            <h6 class="text-secondary">
+                <b>{{ $blog['author'] }}</b> - <b>{{ $blog['published_at'] }}</b>
+            </h6>
+            <div class="mt-2">
+                @foreach($blog['tags'] as $tag)
+                <span class="badge {{ $loop->first ? 'bg-primary text-decoration-underline' : 'bg-secondary' }}">{{ $tag }}</span>
+                @endforeach
+            </div>            
+            <p class="card-text mt-3">{{ $blog['content'] }}</h6>
         </div>
-        <p class="card-text mt-2">{{ $blog['content'] }}</h6>
 
         <div class="d-flex justify-content-between mt-4">
             <a href="/" class="btn btn-outline-primary">
-                <-- Retour aux articles
-                    </a>
+                <-Retour aux articles
+            </a>
 
-                    <a href="{{ route('dashboard') }}?admin=1" class="btn btn-outline-secondary">
-                        Vue admin
-                    </a>
+            <a href="/admin/articles/view/{{ $blog['slug'] }}?admin=1" class="btn btn-outline-secondary">
+                Vue admin
+            </a>
         </div>
-
     </div>
 
 </div>

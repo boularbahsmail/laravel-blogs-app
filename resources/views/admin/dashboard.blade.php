@@ -3,7 +3,7 @@
 <div class="container mt-4">
     <h1>Gestion des articles</h1>
     <hr />
-    <table class="table table-striped align-middle">
+    <table class="table table-striped p-2 table-lg table-responsive">
         <thead class="table-light">
             <tr>
                 <th>ID</th>
@@ -24,7 +24,7 @@
                 <td>{{ $blog['published_at'] }}</td>
                 <td>
                     <a href="/admin/articles/view/{{ $blog['slug'] }}?admin=1" class="btn btn-info btn-sm">Voir</a>
-                    <a href="#" class="btn btn-warning btn-sm">Modifier</a>
+                    <a href="/admin/articles/edit/{{ $blog['slug'] }}?admin=1" class="btn btn-warning btn-sm">Modifier</a>
                 </td>
             </tr>
             @endforeach

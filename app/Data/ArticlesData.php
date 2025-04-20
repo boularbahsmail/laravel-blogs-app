@@ -14,11 +14,7 @@ class ArticlesData
                 'id' => 1,
                 'title' => 'Introduction à Laravel',
                 'slug' => 'introduction-a-laravel',
-                'content' => "Laravel est un framework PHP élégant qui
-    facilite le développement d'applications web en fournissant une structure
-    claire et des outils puissants.\n\nIl offre un routeur simple, un ORM
-    puissant (Eloquent), un moteur de template (Blade), et bien d'autres
-    fonctionnalités...",
+                'content' => "Laravel est un framework PHP élégant qui facilite le développement d'applications web en fournissant une structure claire et des outils puissants.\n\nIl offre un routeur simple, un ORM puissant (Eloquent), un moteur de template (Blade), et bien d'autres fonctionnalités...",
                 'author' => 'Marie Dupont',
                 'published_at' => '2025-03-15',
                 'category' => 'Framework',
@@ -30,11 +26,7 @@ class ArticlesData
                 'id' => 2,
                 'title' => 'Les bases du routage dans Laravel',
                 'slug' => 'les-bases-du-routage-dans-laravel',
-                'content' => "Le routage est un concept fondamental dans
-    Laravel. Il permet de définir les URLs de votre application et de les
-    associer à des contrôleurs ou des fonctions anonymes.\n\nLes routes
-    peuvent être définies pour différentes méthodes HTTP (GET, POST, PUT,
-    DELETE) et peuvent contenir des paramètres...",
+                'content' => "Le routage est un concept fondamental dans Laravel. Il permet de définir les URLs de votre application et de les associer à des contrôleurs ou des fonctions anonymes.\n\nLes routes peuvent être définies pour différentes méthodes HTTP (GET, POST, PUT, DELETE) et peuvent contenir des paramètres...",
                 'author' => 'Jean Martin',
                 'published_at' => '2025-03-20',
                 'category' => 'Laravel',
@@ -46,11 +38,7 @@ class ArticlesData
                 'id' => 3,
                 'title' => 'Les contrôleurs dans Laravel',
                 'slug' => 'les-controleurs-dans-laravel',
-                'content' => "Les contrôleurs permettent d'organiser la
-        logique de votre application en regroupant le traitement des requêtes HTTP
-        dans des classes.\n\nIls sont stockés dans le dossier app/Http/Controllers
-        et peuvent être générés facilement via Artisan. Un contrôleur peut
-        contenir plusieurs méthodes, chacune associée à une route spécifique...",
+                'content' => "Les contrôleurs permettent d'organiser la logique de votre application en regroupant le traitement des requêtes HTTP dans des classes.\n\nIls sont stockés dans le dossier app/Http/Controllers et peuvent être générés facilement via Artisan. Un contrôleur peut contenir plusieurs méthodes, chacune associée à une route spécifique...",
                 'author' => 'Marie Dupont',
                 'published_at' => '2025-03-25',
                 'category' => 'Laravel',
@@ -67,10 +55,7 @@ class ArticlesData
                 'id' => 4,
                 'title' => 'Sécurisation d\'une API avec Laravel Sanctum',
                 'slug' => 'securisation-api-avec-laravel-sanctum',
-                'content' => "Laravel Sanctum est une solution légère pour
-            l'authentification API. Il offre plusieurs façons d'authentifier les
-            utilisateurs, notamment via des tokens d'API ou des cookies desession.\n\nLes tokens peuvent être générés pour les utilisateurs et
-    inclus dans les en-têtes HTTP pour authentifier les requêtes API...",
+                'content' => "Laravel Sanctum est une solution légère pour l'authentification API. Il offre plusieurs façons d'authentifier les utilisateurs, notamment via des tokens d'API ou des cookies desession.\n\nLes tokens peuvent être générés pour les utilisateurs et inclus dans les en-têtes HTTP pour authentifier les requêtes API...",
                 'author' => 'Paul Dubois',
                 'published_at' => '2025-04-05',
                 'category' => 'Sécurité',
@@ -87,17 +72,11 @@ class ArticlesData
                 'id' => 5,
                 'title' => 'Optimisation des performances dans Laravel',
                 'slug' => 'optimisation-des-performances-dans-laravel',
-                'content' => "L'optimisation des performances est cruciale
-    pour offrir une expérience utilisateur fluide. Laravel propose plusieurs
-    outils pour améliorer les performances de votre application.\n\nLe cache,
-    la mise en file d'attente des tâches, l'optimisation des requêtes Eloquent
-    et la compilation des vues Blade sont quelques-unes des techniques que
-    vous pouvez utiliser...",
+                'content' => "L'optimisation des performances est cruciale pour offrir une expérience utilisateur fluide. Laravel propose plusieurs outils pour améliorer les performances de votre application.\n\nLe cache, la mise en file d'attente des tâches, l'optimisation des requêtes Eloquent et la compilation des vues Blade sont quelques-unes des techniques que vous pouvez utiliser...",
                 'author' => 'Sophie Moreau',
                 'published_at' => '2025-04-10',
                 'category' => 'Performance',
-                'summary' => 'Techniques pour accélérer vos applications
-    Laravel',
+                'summary' => 'Techniques pour accélérer vos applications Laravel',
                 'tags' => [
                     'Performance',
                     'Optimisation',
